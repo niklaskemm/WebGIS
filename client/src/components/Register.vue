@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import AuthentificationService from '@/services/AuthentificationService'
+import AuthenticationService from '@/services/AuthenticationService'
 export default {
   data() {
     return {
@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     async register () {
-      await AuthentificationService.register({
+      await AuthenticationService.register({
         email: this.email,
         password: this.password
       })
